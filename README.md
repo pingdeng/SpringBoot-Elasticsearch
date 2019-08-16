@@ -59,7 +59,7 @@ http.cors.enabled: true
 http.cors.allow-origin: "*"
 ```
 
-- 启动elasticsearch-head 通过一下命令
+- 启动elasticsearch-head 通过以下命令
 
 ```sh
 cd elasticsearch-head
