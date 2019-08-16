@@ -24,9 +24,10 @@
 - node8.0.0+
 
 <br>
-说明： 在没有使用Elasticsearch-head时，那么node环境和Vue无需掌握，可以直接使用官当的Kibana进行可视化操作。
+- 说明： 在没有使用Elasticsearch-head时，那么node环境和Vue无需掌握，可以直接使用官当的Kibana进行可视化操作。
 
 <br>
+
 **项目结构** 
 
 ```
