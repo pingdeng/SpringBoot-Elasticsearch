@@ -59,9 +59,13 @@ http.cors.enabled: true
 http.cors.allow-origin: "*"
 ```
 
-- cd elasticsearch-head
-- npm install
-- npm run start
+- 启动elasticsearch-head 通过一下命令
+
+```sh
+cd elasticsearch-head
+npm install
+npm run start
+```
 
 <br>
 
