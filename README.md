@@ -10,7 +10,7 @@
 - 核心框架：SpringBoot2.1.7
 - 搜索引擎：Elasticsearch7.3.0
 - 简化代码：Lombok1.18+
-- 阿里JSON装换：fastjson1.2.37
+- 阿里JSON转换：fastjson1.2.37
 - 可视化页面：vue
 
 <br>
@@ -51,6 +51,14 @@ SpringBoot-Elasticsearch
 <br>
 
 - 如果需要启动可视化工具elasticsearch-head，需要安装node环境。
+- 在启动elasticsearch-head之前需要配置Elasticsearch7.3.0环境，因为elasticsearch-head和Elasticsearch7.3.0是两个不同的服务，它们之间存在跨域问题。
+- 找到下载好的Elasticsearch7.3.0\config\elasticsearch.yml 文件进行编辑在尾端追加以下配置，重新启动Elasticsearch7.3.0
+
+```sh
+http.cors.enabled: true
+http.cors.allow-origin: "*"
+```
+
 - cd elasticsearch-head
 - npm install
 - npm run start
@@ -71,7 +79,7 @@ SpringBoot-Elasticsearch
 
 **补充说明**
 - 在该创库中未上传Elasticsearch7.3.0和kibana-7.3.0-windows-x86_64服务，因为文件过大上传了会造成用户无法git到项目，可以自行在官方下载，下载时注意版本差异，
-- 如果在官方未找到对应版本时，也可以通过我另外一个创库下载，下载地址：https://github.com/pingdeng/elastic.git，
+- 官方下载地址：https://www.elastic.co/cn/downloads/past-releases#kibana
 - 注：下载时较慢因为文件比较大，当网络较差时下载有可能会中断。
 
 **Email：1289010524@qq.com**
