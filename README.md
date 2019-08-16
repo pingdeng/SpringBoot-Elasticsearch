@@ -19,22 +19,18 @@
 **软件需求** 
 - JDK：1.8
 - Elasticsearch7.3.0
-- kibana-7.3.0-windows-x86_64
 - Elasticsearch-head
 - node8.0.0+
 
-<br>
-- 说明： 在没有使用Elasticsearch-head时，那么node环境和Vue无需掌握，可以直接使用官当的Kibana进行可视化操作。
+说明： 在没有使用Elasticsearch-head时，那么node环境和Vue无需掌握，可以直接使用官当的Kibana进行可视化操作。
 
 <br>
 
 **项目结构** 
 
-```
+```sh
 SpringBoot-Elasticsearch
 ├─elasticsearch-head	可视化插件
-│
-├─Elasticsearch7.3.0	Elasticsearch搜索引擎服务
 │
 ├─springboot-es  SpringBoot整合Elasticsearch 核心模块
 │	└─src	核心代码
@@ -44,6 +40,7 @@ SpringBoot-Elasticsearch
 │
 ```
 <br>
+
 **本地部署**
 - 通过git下载源码
 - idea、eclipse需安装lombok插件，不然会提示找不到entity的get set方法
@@ -52,22 +49,30 @@ SpringBoot-Elasticsearch
 - Eclipse、IDEA运行SpringbootEsApplication.java，则可启动项目【springboot-es】
 
 <br>
+
 - 如果需要启动可视化工具elasticsearch-head，需要安装node环境。
 - cd elasticsearch-head
 - npm install
 - npm run start
 
 <br>
+
 - 如果需要使用Kibana，需要下载对应版本进行解压。
 - 切换到kibana-7.3.0-windows-x86_64\bin目录中双击kibana.bat
 
 <br>
+
 - 访问项目地址：127.0.0.1:8066/需要访问的接口
 - 访问elasticsearch-head可视化工具地址： http://localhost:9100/
 - 访问kibana-7.3.0-windows-x86_64官方可视化工具地址：http://127.0.0.1:5601
 - 直接访问Elasticsearch7.3.0服务地址：http://127.0.0.1:9200/
 
 <br>
+
+**补充说明**
+- 在该创库中未上传Elasticsearch7.3.0和kibana-7.3.0-windows-x86_64服务，因为文件过大上传了会造成用户无法git到项目，可以自行在官方下载，下载时注意版本差异，
+- 如果在官方未找到对应版本时，也可以通过我另外一个创库下载，下载地址：https://github.com/pingdeng/elastic.git，
+- 注：下载时较慢因为文件比较大，当网络较差时下载有可能会中断。
 
 **Email：1289010524@qq.com**
 
