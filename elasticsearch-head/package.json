@@ -20,7 +20,7 @@
   "gitHead": "0c2ac0b5723b493e4454baa7398f386ecb829412",
   "readmeFilename": "README.textile",
   "devDependencies": {
-    "grunt": "1.0.1",
+    "grunt": "1.5.3",
     "grunt-contrib-concat": "1.0.1",
     "grunt-contrib-watch": "1.0.0",
     "grunt-contrib-connect": "1.0.2",
